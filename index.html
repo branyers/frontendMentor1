@@ -14,7 +14,7 @@
             <img src="./assets/images/logo.svg" alt="">
         </div>
 
-        <ul class="flex gap-4">
+        <ul class="md:flex gap-4 hidden">
             <li>Home</li>
             <li>News</li>
             <li>Popular</li>
@@ -23,16 +23,18 @@
         </ul>
 
 
-        <!-- <div>
-            <img class="md:hidden" src="./assets/images/icon-menu.svg" alt="">
-        </div> -->
+        <div class="md:hidden">
+            <img id="burger-buttom" src="./assets/images/icon-menu.svg" alt="">
+        </div>
+
+        
     </header>
 
     <main class="md:grid md:grid-cols-4 gap-4 ">
-        <!-- <div class="absolute bg-gray-500 bg-opacity-70 top-0 bottom-0 w-full z-10"></div>
-        <div class="absolute right-0 bottom-0 top-0 w-2/3 z-20 bg-white">
+        <div id="curtain" class="absolute bg-gray-500 bg-opacity-70 top-0 bottom-0 w-full z-10 md:hidden hidden"></div>
+        <div id="menu" class="absolute right-0 bottom-0 top-0 w-2/3 z-20 bg-white md:hidden hidden">
             <div class="flex w-full justify-end p-4 my-3">
-                <img src="./assets/images/icon-menu-close.svg" alt="">
+                <img id="closeMenu" src="./assets/images/icon-menu-close.svg" alt="">
             </div>
             <ul class="my-24 ml-7 leading-10 text-2xl">
                 <li>Home</li>
@@ -41,7 +43,7 @@
                 <li>Trending</li>
                 <li>Categories</li>
             </ul>
-        </div> -->
+        </div>
         <section class="p-4 md:p-0 md:col-start-1 md:col-end-4 ">
             <img class="md:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="">
             <img class="md:block" src="./assets/images/image-web-3-desktop.jpg" alt="">
@@ -140,5 +142,6 @@
         </section>
     </main>
 
+    <script src="./index.js"></script>
 </body>
 </html>
